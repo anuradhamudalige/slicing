@@ -1,0 +1,12 @@
+.item-list {
+  display: flex;
+}
+
+app-carousel-item {
+  margin: 0 10px 0 0;
+}
+
+app-carousel-item:last-child {
+  margin: 0;
+}
+
