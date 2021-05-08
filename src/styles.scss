@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+@import "scss/variables";
+@import "scss/fonts";
+
+//html {
+//  background: url('/assets/img/img-1920x1200.jpg') no-repeat center center fixed;
+//  -webkit-background-size: cover;
+//  -moz-background-size: cover;
+//  -o-background-size: cover;
+//  background-size: cover;
+//
+//  // medium
+//  @media screen and (max-width: 1100px) {
+//    background-image: url('/assets/img/img-1280x800.jpg');
+//  }
+//
+//  @media screen and (max-width: 1100px) and (orientation: portrait) {
+//    background-image: url('/assets/img/img-800x368.jpg');
+//  }
+//
+//  @media screen and (max-width: 800px) {
+//    background-image: url('/assets/img/img-800x368.jpg');
+//  }
+//}
+
+body {
+  font-family: $primary_font;
+  font-size: $primary-fs;
+  font-weight: $regular;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.arrow {
+  border: solid $selected-colour;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  padding: 8px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.font-double {
+  font-size: 2em;
+}
