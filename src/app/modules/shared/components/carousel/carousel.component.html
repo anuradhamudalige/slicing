@@ -1,7 +1,7 @@
 <a class="arrow pointer" (click)="prev()">&#x2770;</a>
 <div class="item-list">
   <div class="mask">
-    <div [@prevNext]="currentTransition" class="wrapper" (@prevNext.done)="onAnimationEvent()">
+    <div [@prevNext]="currentTransition" class="wrapper">
       <app-carousel-item *ngFor="let carouselItem of carouselItemList"
                          [carouselItem]="carouselItem"></app-carousel-item>
     </div>

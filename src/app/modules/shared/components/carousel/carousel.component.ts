@@ -35,7 +35,7 @@ export class CarouselComponent implements OnInit {
     this.currentTransition = 'next';
   }
 
-  onAnimationEvent(): void {
-    this.currentTransition = '';
-  }
+  // onAnimationEvent(): void {
+  //   this.currentTransition = '';
+  // }
 }
