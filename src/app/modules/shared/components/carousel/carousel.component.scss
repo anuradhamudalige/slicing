@@ -1,5 +1,9 @@
-.item-list {
+:host(app-carousel) {
   display: flex;
+}
+
+.item-list {
+  max-width: calc(100vw - 50vw);
 }
 
 app-carousel-item {
@@ -10,3 +14,18 @@ app-carousel-item:last-child {
   margin: 0;
 }
 
+a {
+  color: white;
+  opacity: 0.5;
+  align-self: center;
+  margin: 0 15px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.mask {
+  width: 100%;
+  overflow: hidden;
+}

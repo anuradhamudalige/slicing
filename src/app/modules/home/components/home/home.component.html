@@ -10,6 +10,7 @@
   <div *ngIf="selectedTemplateId === 1"></div>
   <div *ngIf="selectedTemplateId === 1" class="text-center font-double">
     <h2>{{getHeaderText(selectedTemplateId)}}</h2>
+    <div class="title-separator"></div>
     <span [innerHTML]="getContent(selectedTemplateId)"></span>
   </div>
   <div *ngIf="selectedTemplateId === 2">
@@ -28,6 +29,6 @@
 
 <video [@fadeInOut] *ngIf="selectedTemplateId === 1" autoplay [muted]="'muted'" loop class="backdrop-video"
        poster="assets/img/frame.jpg">
-  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  <source [src]="getBackground(selectedTemplateId).url" type="video/mp4">
 </video>
 <div [@fadeInOut] *ngIf="selectedTemplateId === 2" class="backdrop-img"></div>

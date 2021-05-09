@@ -1,5 +1,6 @@
 export class Template {
   id = 0;
-  headerText = '';
+  title = '';
   content: any;
+  background: any;
 }

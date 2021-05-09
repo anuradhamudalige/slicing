@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "LOREM IPSUM DOLOR",
+    "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.<br>Quisque volutpat mattis eros.",
+    "background": {
+      "type": "video/mp4",
+      "url": "https://www.w3schools.com/html/mov_bbb.mp4"
+    }
+  },
+  {
+    "id": 2,
+    "title": "DONEC NEC JUSTO",
+    "content": [
+      {
+        "header": "Lorem ipsum #1",
+        "content": "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci."
+      },
+      {
+        "header": "Lorem ipsum #2",
+        "content": "Aenean dignissim pelle ntesque felis sed egestas, ante et vulputate volutpat."
+      },
+      {
+        "header": "Lorem ipsum #3",
+        "content": "Eros pede semper est, vitae luctus metus libero eu augue."
+      }
+    ],
+    "background": {
+      "type": "img"
+    }
+  }
+]
