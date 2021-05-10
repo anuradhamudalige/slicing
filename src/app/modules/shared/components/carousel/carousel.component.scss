@@ -14,15 +14,23 @@ app-carousel-item:last-child {
   margin: 0;
 }
 
-a {
+button {
   color: white;
-  opacity: 0.5;
+  //opacity: 0.5;
   align-self: center;
   margin: 0 15px;
+  background: transparent;
+  border: none;
+}
+
+button:disabled,
+button[disabled] {
+  opacity: 0.5;
 }
 
 .wrapper {
   display: flex;
+  transition: transform 1s ease 0s;
 }
 
 .mask {
