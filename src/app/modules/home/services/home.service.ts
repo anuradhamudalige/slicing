@@ -10,6 +10,6 @@ export class HomeService {
   }
 
   getData(): Observable<Template[]> {
-    return this.connectionService.get<Template[]>('assets/data/data.json');
+    return this.connectionService.get<Template[]>('./assets/data/data.json');
   }
 }
