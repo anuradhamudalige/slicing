@@ -51,6 +51,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "baseHref": "/slicing/",
               "budgets": [
                 {
                   "type": "initial",
