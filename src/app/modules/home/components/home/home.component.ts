@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Template } from '../../models/template';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { HomeService } from '../../services/home.service';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -21,7 +22,7 @@ export class HomeComponent implements OnInit {
   selectedTemplateId: number | undefined;
   alterClass = '';
 
-  constructor(private homeService: HomeService) {
+  constructor(private homeService: HomeService, private metaService: Meta) {
   }
 
   ngOnInit(): void {
@@ -33,6 +34,7 @@ export class HomeComponent implements OnInit {
       this.templateList = response;
       this.selectedTemplateId = response[0].id;
       this.alterClass = 'slide-a';
+      this.initializeMeta(response[0]);
     });
   }
 
@@ -58,5 +60,13 @@ export class HomeComponent implements OnInit {
 
   getBackground(id: number): any {
     return this.templateList.filter(item => item.id === id)[0].background;
+  }
+
+  private initializeMeta(template: Template): void {
+    this.metaService.addTags([
+      {name: 'keywords', content: template.title},
+      {name: 'description', content: template.content},
+      {name: 'robots', content: 'index, follow'}
+    ]);
   }
 }
